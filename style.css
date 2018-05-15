@@ -31,6 +31,7 @@ header button {
 	border: 2px solid green;
 	color: blue;
 	margin-right: 16px;
+	box-shadow: 5px 5px 0px 0px rgba(34,179,43,1);
 }
 
 .logo {
@@ -56,6 +57,25 @@ article div  {
 	align-items: center;
 	color: white;
 
+}
+
+div h1:first-child {
+	margin-top: 20px;
+}
+
+.logo:hover {
+	color: blue;
+	cursor: pointer;
+}
+
+header li:hover {
+	color: lightblue;
+	cursor: pointer;
+}
+
+header button:hover {
+	color: lightblue;
+	cursor: pointer;
 }
 
 article div:nth-child(2) {
@@ -104,8 +124,27 @@ article div:hover {
 }
 
 footer {
-	display: block;
-	width: 100%
 	height: 150px;
 	background-color:#21303b;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 0;
+	align-items: center;
+	
+}
+footer nav {
+	display:block;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+footer nav a {
+	display: inline-block;
+	padding: 0 15px;
+	text-decoration: none;
+	color: white;
+}
+
+footer nav a:hover {
+	color: #fbc227;
 }
